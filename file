@@ -1,0 +1,99 @@
+            <div class="item">
+
+                <div class="item-title">Мотокоса 43</div>
+
+                <div class="item-image">
+                    <img scr="img-market/1.png" alt="Мотокоса 43">
+                </div>
+
+                <div class="parts-pay">
+                    <div><img scr="img-market/mono-lapka.png" alt="">6</div>
+                    <div><img scr="img-market/pb.png" alt="">8</div>
+                </div>
+
+                <div class="price">
+                    <div><span>5499 </span><sup>грн</sup></div>
+                    <div><span>4497 </span><sup>грн</sup></div>
+                </div>
+
+                <div class="price bonus">
+                    <div>ціна за купоном</div>
+                    <div><span>4395 </span><sup>грн</sup></div>
+                </div>
+            
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">Електричний тример 110</div>
+
+                <div class="item-image">
+                    <img scr="img-market/1.png" alt="тример">
+                </div>
+
+                <div class="parts-pay">
+                    <div><img scr="img-market/mono-lapka.png" alt="">6</div>
+                    <div><img scr="img-market/pb.png" alt="">8</div>
+                </div>
+
+                <div class="price">
+                    <div><span>4497 </span><sup>грн</sup></div>
+                    <div><span>3498 </span><sup>грн</sup></div>
+                </div>
+
+                <div class="price bonus">
+                    <div>ціна за купоном</div>
+                    <div><span>3396 </span><sup>грн</sup></div>
+                </div>
+            
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">Газонокосарка</div>
+
+                <div class="item-image">
+                    <img scr="img-market/1.png" alt="газонокосарка">
+                </div>
+
+                <div class="parts-pay">
+                    <div><img scr="img-market/mono-lapka.png" alt="">6</div>
+                    <div><img scr="img-market/pb.png" alt="">8</div>
+                </div>
+
+                <div class="price">
+                    <div><span>4497 </span><sup>грн</sup></div>
+                    <div><span>3297 </span><sup>грн</sup></div>
+                </div>
+
+                <div class="price bonus">
+                    <div>ціна за купоном</div>
+                    <div><span>3195 </span><sup>грн</sup></div>
+                </div>
+            
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">Обприскувач</div>
+
+                <div class="item-image">
+                    <img scr="img-market/1.png" alt="обприскувач">
+                </div>
+
+                <div class="parts-pay">
+                    <div><img scr="img-market/mono-lapka.png" alt="">6</div>
+                    <div><img scr="img-market/pb.png" alt="">8</div>
+                </div>
+
+                <div class="price">
+                    <div><span>2190 </span><sup>грн</sup></div>
+                    <div><span>1698 </span><sup>грн</sup></div>
+                </div>
+
+                <div class="price bonus">
+                    <div>ціна за купоном</div>
+                    <div><span>1596 </span><sup>грн</sup></div>
+                </div>
+            
+            </div>
