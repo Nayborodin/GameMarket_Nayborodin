@@ -142,22 +142,9 @@ let itemsArray = [
 ];
 console.log(itemsArray)
 
-//Перевірка існування знайденого блоку
-/*if (itemsDiv) {
-    itemsArray.forEach((item, index) => {
-        let itemNumber = (index + 1).toString().padStart(2, ''); 
-        itemsDiv.innerHTML +=
-        `
-        <div class="item">
-            <h2>товар №${index+1} з ${itemsArray.length}</h2>
-            <p>${item}</p>
-        </div>
-        `;
-    });
-} else {
-    console.log('Блок товарів не знайдено');
-}*/
+let itemsDiv=document.getElementById("items")
 
+//Перевірка існування знайденого блоку
 if (itemsDiv) {
     itemsArray
     .forEach((item, index) => {
@@ -171,5 +158,9 @@ if (itemsDiv) {
             <p><img src=${item.photo}" class= "item-image"></p>
             <p><a href="${item.url}" target="_blank" class="bonus price">Профіль</a></p>
         </div>
-        `;
-    });}
+        `
+    })
+} 
+else {
+    console.log('Блок товарів не знайдено');
+}
