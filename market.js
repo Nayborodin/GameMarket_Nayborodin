@@ -1,138 +1,166 @@
-//перевірка підключеного файлу скриптів
-console.log('Перевірка підключеного файлу скрипту market.js')
+//Перевірка підключеного файлу 
+console.log('Перевірка підключеного файлу скриптів market.js')
 
-
-
-//Вивід знайдкного елементу
-// console.log(itemsDiv)
-
-//Визначення масиву товарів
+//визначення масиву товарів
 let itemsArray = [
     {
-        firstName: "Віталій ",
-        lastName: "Шатківський ",
-        age: 43,
-        subject: "CS",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
+        firsName:"Віталій",
+        lastName:"Шатківський",
+        Surname:"Миколайович",
+        subject:"CS",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
     },
     {
-        firstName: "Наталія",
-        lastName: "Венцель",
-        age: 18,
-        subject: "адміністратор",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/ventsel-nataliya-vasylivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/ventsel-n-v/",
+        firsName:"Анжела",
+        lastName:"Лознюк",
+        Surname:"Леонідівна",
+        subject:"Українська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/10/photo_2023-10-25_15-46-33-1-693x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/loznyuk-anzhela-leonidivna/",
     },
     {
-        firstName: "Олена",
-        lastName: "Геча",
-        age: 18,
-        subject: "Історія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/hecha-o-a/",
+        firsName:"Наталія",
+        lastName:"Зинюк",
+        Surname:"Миколаївна",
+        subject:"Хімія та білогія",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2024/01/zynjuk-natalija-mykolayivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/zynyuk-nataliya-mykolayivna/",
     },
     {
-        firstName: "Вікторія",
-        lastName: "Нелипович",
-        age: 18,
-        subject: "Фізика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/nelypovych-viktoriya-vitaliyivna/",
+        firsName:"Наталія",
+        lastName:"Венцель",
+        Surname:"Василівна",
+        subject:"Директор",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/ventsel-nataliya-vasylivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/ventsel-n-v/",
     },
     {
-        firstName: "Василь",
-        lastName: "Бабій",
-        age: 18,
-        subject: "Фізична культура",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/babiy-vasyl-dmytrovych/",
+        firsName:"Лариса",
+        lastName:"Забелло",
+        Surname:"Олександрівна",
+        subject:"Англійська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/zabello-larysa-oleksandrivna-682x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/zabello-l-o/",
     },
     {
-        firstName: "Тарас",
-        lastName: "Савінков",
-        age: 18,
-        subject: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/savinkov-taras-yevhenovych-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/savinkov-taras-yevhenovych/",
+        firsName:"Ірина",
+        lastName:"Глібко",
+        Surname:"Анатоліївна",
+        subject:"Англійська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/01/hlibko-iryna-anatoliyevna.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/hlibko-iryna-anatoliyivna/",
     },
     {
-        firstName: "Анжела",
-        lastName: "Лознюк",
-        age: 18,
-        subject: "Українська мова й література та зарубіжна література",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/10/photo_2023-10-25_15-46-33-1-693x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/loznyuk-anzhela-leonidivna/",
+        firsName:"Ірина",
+        lastName:"Боровська-Карандюк",
+        Surname:"Анатоліївна",
+        subject:"Українська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/borovska-karandyuk-iryna-anatoliyivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/borovska-karandyuk-iryna-anatoliyivna/",
     },
     {
-        firstName: "Ірина",
-        lastName: "Боровська-Карандюк",
-        age: 18,
-        subject: "Українська мова й література та зарубіжна література",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/borovska-karandyuk-iryna-anatoliyivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/borovska-karandyuk-iryna-anatoliyivna/",
+        firsName:"Василь",
+        lastName:"Бабій",
+        Surname:"Дмитрович",
+        subject:"Фізична культура",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/babiy-vasyl-dmytrovych/",
     },
     {
-        firstName: "Марія",
-        lastName: "Медведєва",
-        age: 18,
-        subject: "Географія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/medvedyeva-mariya-vasylivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/medvedyeva-mariya-vasylivna/",
+        firsName:"Тарас",
+        lastName:"Савінков",
+        Surname:"Євгенович",
+        subject:"Англійська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/savinkov-taras-yevhenovych-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/savinkov-taras-yevhenovych/",
     },
     {
-        firstName: "Наталія",
-        lastName: "Зинюк",
-        age: 18,
-        subject: "Хімія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2024/01/zynjuk-natalija-mykolayivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/zynyuk-nataliya-mykolayivna/",
+        firsName:"Марія",
+        lastName:"Медведєва",
+        Surname:"Василівна",
+        subject:"Географія",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/medvedyeva-mariya-vasylivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/medvedyeva-mariya-vasylivna/",
     },
     {
-        firstName: "Наталія",
-        lastName: "Гончарук",
-        age: 18,
-        subject: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/honcharuk-nataliya-oleksandrivna-682x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/honcharuk-n-o/",
+        firsName:"Вікторія",
+        lastName:"Нелипович",
+        Surname:"Віталіївна",
+        subject:"Математика",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/nelypovych-viktoriya-vitaliyivna/",
     },
     {
-        firstName: "Марія",
-        lastName: "Гетманська",
-        age: 18,
-        subject: "Практичний психолог",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hetmanska-mariya-oleksandrivna-683x1024.jpg",
-        url: "https://lyceum.ztu.edu.ua/team/hetmanska-m-o/",
+        firsName:"Олена",
+        lastName:"Чугунова",
+        Surname:"Василівна",
+        subject:"Математика",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/chuhunova-olena-vasylivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/chuhunova-o-v/",
     },
+    {
+        firsName:"Наталія",
+        lastName:"Гончарук",
+        Surname:"Олександрівна",
+        subject:"Англійська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/honcharuk-nataliya-oleksandrivna-682x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/honcharuk-n-o/",
+    },
+    {
+        firsName:"Діна",
+        lastName:"Варганова",
+        Surname:"Олександрівна",
+        subject:"Англійська мова",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/varhanova-dina-oleksandrivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/borysyuk-o-m/",
+    },
+    {
+        firsName:"Марія",
+        lastName:"Гетманська",
+        Surname:"Олександрівна",
+        subject:"Психолог",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hetmanska-mariya-oleksandrivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/hetmanska-m-o/",
+    },
+    {
+        firsName:"Наталія",
+        lastName:"Кучер",
+        Surname:"Вікторівна",
+        subject:"Фізика",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/kucher-nataliya-viktorivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/kucher-n-v/",
+    },
+    {
+        firsName:"Олена",
+        lastName:"Геча",
+        Surname:"Анатоіївна",
+        subject:"Історія",
+        photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna-683x1024.jpg",
+        url:"https://lyceum.ztu.edu.ua/team/hecha-o-a/",
+    },
+];
+console.log(itemsArray)
 
-]
-
-//Отримання елементу з ідентифікатором items
-let itemsDiv = document.getElementById("items")
+let itemsDiv=document.getElementById("items")
 
 //Перевірка існування знайденого блоку
 if (itemsDiv) {
-
-    //Виведення елементів масиву
-    itemsArray.forEach((item, index) => {
-        // console.log(item)
-        // itemsDiv.innerHTML += `<div class="item">
-        // <h2>${index}</h2>
-        // <p>${item}</p>
-        // </div>`
+    itemsArray
+    .forEach((item, index) => {
         itemsDiv.innerHTML +=
         `
         <div class="item">
-            <h2>Вчитель № ${index+1} з ${itemsArray.length}</h2>
-            <p>${item.firstName} ${item.lastName}</p>
-            <p>Предмет: ${item.subject}</p>
-            <p><img src = "${item.photo}" class = "item-image"></p>
-            <p><a href = "${item.url}" target = "_blank" class = "btn01">Профіль</a></p>
-            <p><a href = "mailto:${item.email}?subject=Питання&body=Доброго дня" target = "_blank" class = "btn02">Написати</a></p>
-            </div>
+            <h2>Вчитель №${index+1} з ${itemsArray.length}</h2>
+            <p>${item.lastName} ${item.firsName}</p>
+            <p>${item.Surname} </p>
+            <p>Предмет:${item.subject}</p>
+            <p><img src=${item.photo}" class= "item-image"></p>
+            <p><a href="${item.url}" target="_blank" class="bonus price">Профіль</a></p>
+        </div>
         `
     })
-} else {
-    //Вивід знайденого елементу
-    console.log('Блок товарів не знайдено')
+} 
+else {
+    console.log('Блок товарів не знайдено');
 }
